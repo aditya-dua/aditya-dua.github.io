@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditya Dua</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+  }
+  main { width: 100%; max-width: 44rem; }
+  h1 { font-size: 1.75rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .tag { color: #8b949e; margin: 0 0 2.5rem; }
+  h2 {
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #8b949e;
+    font-weight: 600;
+    margin: 0 0 .75rem;
+  }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+  a.card {
+    display: block;
+    padding: .9rem 1.1rem;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color .15s, background .15s;
+  }
+  a.card:hover { border-color: #58a6ff; background: #161b22; }
+  .name { font-weight: 600; color: #58a6ff; }
+  .desc { display: block; color: #8b949e; font-size: .875rem; }
+  footer { margin-top: 3rem; font-size: .8125rem; color: #6e7681; }
+  footer a { color: #8b949e; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Aditya Dua</h1>
+  <p class="tag">Projects published from GitHub.</p>
+
+  <h2>Projects</h2>
+  <ul>
+    <li><a class="card" href="/BDMA/"><span class="name">BDMA</span><span class="desc">adityadua.com/BDMA/</span></a></li>
+    <li><a class="card" href="/Java-Hackathon/"><span class="name">Java Hackathon</span><span class="desc">adityadua.com/Java-Hackathon/</span></a></li>
+    <li><a class="card" href="/resume/"><span class="name">Resume</span><span class="desc">adityadua.com/resume/</span></a></li>
+    <li><a class="card" href="https://sda.adityadua.com/"><span class="name">SDA</span><span class="desc">sda.adityadua.com</span></a></li>
+  </ul>
+
+  <footer>
+    <a href="https://github.com/aditya-dua">github.com/aditya-dua</a>
+  </footer>
+</main>
+</body>
+</html>
