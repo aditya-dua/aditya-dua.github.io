@@ -1,16 +1,27 @@
 # aditya-dua.github.io
 
-Root site for **adityadua.com**.
+Personal site for **adityadua.com** — Aditya Dua.
 
-Because the custom domain is set on this user-site repo, every other
-`aditya-dua/*` repo with GitHub Pages enabled is automatically published at:
+## Pages
+
+| File | URL |
+|---|---|
+| `index.html` | `/` — hero, build-in-progress panel, the three pillars |
+| `experience.html` | `/experience.html` — GitHub-style README prose + `db.career.find()` documents |
+| `works.html` | `/works.html` — courses, bootcamps and open source |
+
+Content is sourced from the LinkedIn profile and the `AdityaDuaIntroCBA` one-pager.
+Static HTML + one stylesheet, no build step. `.nojekyll` is set, so files are served as-is.
+
+## Routing for other repos
+
+The custom domain is set on **this** user-site repo, so every other `aditya-dua/*` repo
+with GitHub Pages enabled is automatically published at:
 
 ```
 https://adityadua.com/<repo-name>/
 ```
 
-No `CNAME` file and no custom-domain setting is needed in those repos —
-adding one there would override this and break the path-based routing.
-
-The only per-repo setting required is the asset base path, e.g.
-`baseurl: /<repo>` (Jekyll), `base: '/<repo>/'` (Vite), `basePath` (Next.js).
+Do **not** add a `CNAME` file or custom domain to those repos — it overrides this and
+breaks the path-based routing. The only per-repo setting needed is the asset base path,
+e.g. `baseurl: /<repo>` (Jekyll), `base: '/<repo>/'` (Vite), `basePath` (Next.js).
